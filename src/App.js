@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import 'tachyons';
 import FunctionComp from './components/FunctionComp';
 import ClassComp from './components/ClassComp';
 import MessageComp from './components/Message';
@@ -8,7 +9,8 @@ import FunctionClickEvent from './components/FunctionClickEvent';
 import ClassEventBind from './components/ClassEventBind';
 import ChildToParent from './components/childToParent/ParentComp';
 import ConditionRender from './components/conditionRender/Condition';
-import 'tachyons';
+import PersonList from './components/itemList/PersonList';
+
 
 class App extends Component {
   render() {
@@ -31,7 +33,8 @@ class App extends Component {
         {/*<FunctionClickEvent></FunctionClickEvent>*/}
         {/*<ClassEventBind></ClassEventBind>*/}
         {/*<ChildToParent></ChildToParent>*/}
-        <ConditionRender></ConditionRender>
+        {/*<ConditionRender></ConditionRender>*/}
+        <PersonList></PersonList>
 
       </div>
     );
