@@ -26,7 +26,13 @@ function PersonList() {
     ]
 
     // const personList = persons.map(person => <h2>I'm {person.name}, I'm {person.age} years old. I have experience in {person.skill} </h2>)
-    const personList = persons.map(person => <Person person={person}></Person>)
+    /*
+      Key is a special string attribute you need to include when creating lists of elements 
+      Key give the elements a stable identity
+      Key help React identify which items have changed, are added, or are removed 
+      Help in efficient update of the user interface 
+    */
+    const personList = persons.map(person => <Person key={person.id} person={person}></Person>)
     return (
         <div>
             {/* 

@@ -10,6 +10,7 @@ import ClassEventBind from './components/ClassEventBind';
 import ChildToParent from './components/childToParent/ParentComp';
 import ConditionRender from './components/conditionRender/Condition';
 import PersonList from './components/itemList/PersonList';
+import IndexAsKey from './components/itemList/IndexAsKey';
 
 
 class App extends Component {
@@ -34,7 +35,8 @@ class App extends Component {
         {/*<ClassEventBind></ClassEventBind>*/}
         {/*<ChildToParent></ChildToParent>*/}
         {/*<ConditionRender></ConditionRender>*/}
-        <PersonList></PersonList>
+        {/*<PersonList></PersonList>*/}
+        <IndexAsKey></IndexAsKey>
 
       </div>
     );
