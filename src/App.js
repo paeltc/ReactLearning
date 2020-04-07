@@ -11,6 +11,10 @@ import ChildToParent from './components/childToParent/ParentComp';
 import ConditionRender from './components/conditionRender/Condition';
 import PersonList from './components/itemList/PersonList';
 import IndexAsKey from './components/itemList/IndexAsKey';
+import Stylesheet from './components/stylingCSS/Stylesheet';
+import InlineCSS from './components/stylingCSS/Inline';
+import './components/stylingCSS/cssModule/appStyle.css';
+import styles from './components/stylingCSS/cssModule/appStyle.module.css';
 
 
 class App extends Component {
@@ -36,7 +40,14 @@ class App extends Component {
         {/*<ChildToParent></ChildToParent>*/}
         {/*<ConditionRender></ConditionRender>*/}
         {/*<PersonList></PersonList>*/}
-        <IndexAsKey></IndexAsKey>
+        {/*<IndexAsKey></IndexAsKey>*/}
+        {/*<Stylesheet></Stylesheet>*/}
+        {/*Passing as a props - Using leteral
+        <Stylesheet primary={true}></Stylesheet>*/}
+        {/*<InlineCSS></InlineCSS> */}
+        <h1 className='error'>Error - appStyle</h1>
+        <h1 className={styles.success}>Success - appStyle.module</h1>
+
 
       </div>
     );

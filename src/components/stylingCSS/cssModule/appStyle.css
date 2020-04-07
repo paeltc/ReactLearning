@@ -1,0 +1,6 @@
+/* Class are not localy scope 
+can create conflic with class children components*/
+
+.error {
+    color: red
+}

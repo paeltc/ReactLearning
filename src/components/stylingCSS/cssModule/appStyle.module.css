@@ -1,0 +1,6 @@
+/* Class are localy scope 
+can't be use in the children components*/
+
+.sucess {
+    color: green
+}
