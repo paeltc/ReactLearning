@@ -1,0 +1,62 @@
+Lifecycle Methods
+
+1- Mounting Lifecycle Methods
+  constructor(props)
+   * A special function that will get called whenever a new component is created
+   * Initializing state
+   * Binding the event handlers
+   * Do not cause side effects, Ex: HTTP requests
+   * super(props)
+   * Directly overwrite this.state
+
+  getDerivedStateFromProps(props,state)
+   * When the state of the component depends on changes in props over time
+   * Set the state
+   * Do not cause side effects, Ex: HTTP requests
+
+  render()
+   * Only required Method
+   * Read props & state and return JSX
+   * Do not change state or interact with DOM or make ajax calls
+   * Children component lifecycle method are also executed
+
+  componentDidMount()
+   * Invoked immediately after a component and all children components have been rendered to the DOM
+   * Cause side effects. Ex: interact with the DOM or perform any ajax calls to load data
+
+2- Updating Lifecycle Methods
+  static getDerivedStateFromProps(props, state)
+   * Method is called every time a component is re-rendered
+   * Set the state
+   * Do not cause side effect. Ex: HTTP requests
+
+  shouldComponentUpdate()
+   * Dictaes if the component should re-render or not 
+   * Performance optimization
+   * Do not cause side effects. Ex: HTTP requests, Calling the setState method
+
+  render()
+   * Only required method
+   * Read props & state and return JSX
+   * Do not change state or interact with DOM or make ajax calls.
+
+  getSnapshotBeforeUpdate()
+   * Called right before the changes from the virtual DOM. Are to be reflected in the DOM
+   * Capture aome information from the DOM
+   * Method will either return null or return a value. Return value will be passed as the third parameter to the next method
+
+  componentDidUpdate(prevProps, prevState, snapshot)
+   * Called after the render is finished in the re-render cycles
+   * Cause side effects
+
+3- Unmounting Lifecycle Methods
+  componentWillUnmount()
+   * Method is invoked immediately before a component is unmounted and destroyed
+   * Cancelling any network requests, removing event handler, cancelling any sbscriptions and also invalidating times
+   * Do not call the setState method
+
+4- Error Handling Phase Methods
+  static getDerivedStateFromError(error)
+   * Call when there is error either during rendering, in a lifecycle method, or in the constructor of any shild component
+  componentDidCatch(error, info)
+  * Call when there is error either during rendering, in a lifecycle method, or in the constructor of any shild component

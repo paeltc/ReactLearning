@@ -16,6 +16,8 @@ import InlineCSS from './components/stylingCSS/Inline';
 import './components/stylingCSS/cssModule/appStyle.css';
 import styles from './components/stylingCSS/cssModule/appStyle.module.css';
 import Form from './components/form/form';
+import MountingMethod from './components/lifecycles/mountingMethod/MountingA';
+import UpdatingMethod from './components/lifecycles/updatingMethod/UpdatingA';
 
 
 class App extends Component {
@@ -48,8 +50,9 @@ class App extends Component {
         {/*<InlineCSS></InlineCSS> */}
         {/*<h1 className='error'>Error - appStyle</h1>
         <h1 className={styles.success}>Success - appStyle.module</h1>*/}
-        <Form></Form>
-
+        {/*<Form></Form>*/}
+        {/*<MountingMethod></MountingMethod>*/}
+        <UpdatingMethod></UpdatingMethod>
 
       </div>
     );
