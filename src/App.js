@@ -18,6 +18,7 @@ import styles from './components/stylingCSS/cssModule/appStyle.module.css';
 import Form from './components/form/form';
 import MountingMethod from './components/lifecycles/mountingMethod/MountingA';
 import UpdatingMethod from './components/lifecycles/updatingMethod/UpdatingA';
+import Fragment from './components/fragments/Fragments';
 
 
 class App extends Component {
@@ -52,8 +53,8 @@ class App extends Component {
         <h1 className={styles.success}>Success - appStyle.module</h1>*/}
         {/*<Form></Form>*/}
         {/*<MountingMethod></MountingMethod>*/}
-        <UpdatingMethod></UpdatingMethod>
-
+        {/*<UpdatingMethod></UpdatingMethod>*/}
+        <Fragment></Fragment>
       </div>
     );
   }
