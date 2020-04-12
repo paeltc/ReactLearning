@@ -19,6 +19,7 @@ import Form from './components/form/form';
 import MountingMethod from './components/lifecycles/mountingMethod/MountingA';
 import UpdatingMethod from './components/lifecycles/updatingMethod/UpdatingA';
 import Fragment from './components/fragments/Fragments';
+import ParentComp from './components/pureComponents/ParentComp';
 
 
 class App extends Component {
@@ -54,7 +55,8 @@ class App extends Component {
         {/*<Form></Form>*/}
         {/*<MountingMethod></MountingMethod>*/}
         {/*<UpdatingMethod></UpdatingMethod>*/}
-        <Fragment></Fragment>
+        {/*<Fragment></Fragment>*/}
+        <ParentComp></ParentComp>
       </div>
     );
   }
