@@ -20,7 +20,7 @@ import MountingMethod from './components/lifecycles/mountingMethod/MountingA';
 import UpdatingMethod from './components/lifecycles/updatingMethod/UpdatingA';
 import Fragment from './components/fragments/Fragments';
 import ParentComp from './components/pureComponents/ParentComp';
-
+import ParentComps from './components/memoComponent/parentComps';
 
 class App extends Component {
   render() {
@@ -56,7 +56,8 @@ class App extends Component {
         {/*<MountingMethod></MountingMethod>*/}
         {/*<UpdatingMethod></UpdatingMethod>*/}
         {/*<Fragment></Fragment>*/}
-        <ParentComp></ParentComp>
+        {/*<ParentComp></ParentComp>*/}
+        <ParentComps></ParentComps>
       </div>
     );
   }

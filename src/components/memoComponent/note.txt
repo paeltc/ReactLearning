@@ -1,0 +1,3 @@
+Memo component work with function component
+ * We export React.memo function to make it work
+Pure component work with class base component
