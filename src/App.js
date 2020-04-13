@@ -26,6 +26,10 @@ import Refs2st from './components/useRef/refs/Refs2Way';
 import Ref2Class from './components/useRef/refsWithClass/FocusInput';
 import ForwardRef from './components/useRef/refsForwarding/ForwardRefParent';
 import Portal from './components/portals/PortalDemo';
+import Errror from './components/errorBoundary/getDerived/Hero';
+import ErrorBoundaryDerived from './components/errorBoundary/getDerived/ErrorBoundaryDerived';
+import TvBrand from './components/errorBoundary/compDidCatch/tvBrand';
+import ErrorBoundaryCatch from './components/errorBoundary/compDidCatch/ErrorBoundaryCatch';
 
 class App extends Component {
   render() {
@@ -59,7 +63,16 @@ class App extends Component {
         {/*<Refs2st></Refs2st>*/}
         {/*<Ref2Class></Ref2Class>*/}
         {/*<ForwardRef/>*/}
-        <Portal/>
+        {/*<Portal/>*/}
+        {/*<ErrorBoundaryDerived>
+          <Errror heroname="Batman"></Errror>
+          <Errror heroname="Joker"></Errror>
+        </ErrorBoundaryDerived>*/}
+        <ErrorBoundaryCatch>
+          <TvBrand brandname="Sony"></TvBrand>
+          <TvBrand brandname="Samsung"></TvBrand>
+        </ErrorBoundaryCatch>
+
       </div>
     );
   }
