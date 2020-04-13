@@ -21,6 +21,10 @@ import UpdatingMethod from './components/lifecycles/updatingMethod/UpdatingA';
 import Fragment from './components/fragments/Fragments';
 import PureComp from './components/pureComponents/ParentComp';
 import MemoComp from './components/memoComponent/parentComps';
+import Refs1st from './components/useRef/refs/Refs1Way';
+import Refs2st from './components/useRef/refs/Refs2Way';
+import Ref2Class from './components/useRef/refsWithClass/FocusInput';
+import ForwardRef from './components/useRef/refsForwarding/ForwardRefParent';
 
 class App extends Component {
   render() {
@@ -50,6 +54,10 @@ class App extends Component {
         {/*<Fragment></Fragment>*/}
         {/*<PureComp></PureComp>*/}
         {/*<MemoComp></MemoComp>*/}
+        {/*<Refs1st></Refs1st>*/}
+        {/*<Refs2st></Refs2st>*/}
+        {/*<Ref2Class></Ref2Class>*/}
+        <ForwardRef/>
       </div>
     );
   }
