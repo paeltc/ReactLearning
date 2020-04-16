@@ -30,6 +30,12 @@ import Errror from './components/errorBoundary/getDerived/Hero';
 import ErrorBoundaryDerived from './components/errorBoundary/getDerived/ErrorBoundaryDerived';
 import TvBrand from './components/errorBoundary/compDidCatch/tvBrand';
 import ErrorBoundaryCatch from './components/errorBoundary/compDidCatch/ErrorBoundaryCatch';
+import ClickCounter1 from './components/higherOrderComp/part1/ClickCounter1';
+import HoverCounter1 from './components/higherOrderComp/part1/HoverCounter1';
+import ClickCounter2 from './components/higherOrderComp/part2/ClickCounter2';
+import HoverCounter2 from './components/higherOrderComp/part2/HoverCounter2';
+import ClickCounter3 from './components/higherOrderComp/part3/ClickCounter3';
+import HoverCounter3 from './components/higherOrderComp/part3/HoverCounter3';
 
 class App extends Component {
   render() {
@@ -68,11 +74,16 @@ class App extends Component {
           <Errror heroname="Batman"></Errror>
           <Errror heroname="Joker"></Errror>
         </ErrorBoundaryDerived>*/}
-        <ErrorBoundaryCatch>
+        {/*<ErrorBoundaryCatch>
           <TvBrand brandname="Sony"></TvBrand>
           <TvBrand brandname="Samsung"></TvBrand>
-        </ErrorBoundaryCatch>
-
+        </ErrorBoundaryCatch>*/}
+        {/*<ClickCounter1></ClickCounter1>
+        <HoverCounter1></HoverCounter1>*/}
+        {/*<ClickCounter2></ClickCounter2>
+        <HoverCounter2></HoverCounter2>*/}
+        {/*<ClickCounter3 name='Paul-Elvis'></ClickCounter3>
+        <HoverCounter3></HoverCounter3>*/}
       </div>
     );
   }
