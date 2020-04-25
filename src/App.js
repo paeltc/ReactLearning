@@ -36,6 +36,12 @@ import ClickCounter2 from './components/higherOrderComp/part2/ClickCounter2';
 import HoverCounter2 from './components/higherOrderComp/part2/HoverCounter2';
 import ClickCounter3 from './components/higherOrderComp/part3/ClickCounter3';
 import HoverCounter3 from './components/higherOrderComp/part3/HoverCounter3';
+import ClickCounterTwo from './components/renderProps/part1/ClickCounterTwo';
+import HoverCounterTwo from './components/renderProps/part1/HoverCounterTwo';
+import ClickCounterThree from './components/renderProps/part3/ClickCounterThree';
+import HoverCounterThree from './components/renderProps/part3/HoverCounterThree';
+import User from './components/renderProps/part2/User';
+import Counter from './components/renderProps/part3/Counter';
 
 class App extends Component {
   render() {
@@ -84,6 +90,24 @@ class App extends Component {
         <HoverCounter2></HoverCounter2>*/}
         {/*<ClickCounter3 name='Paul-Elvis'></ClickCounter3>
         <HoverCounter3></HoverCounter3>*/}
+        {/* <ClickCounterTwo></ClickCounterTwo>
+        <HoverCounterTwo></HoverCounterTwo> */}
+        {/*  <ClickCounterTwo></ClickCounterTwo>
+        <HoverCounterTwo></HoverCounterTwo> */}
+        {/*<User name = 'Paul-Elvis'/>  {/*Render as a props */}
+        {/*<User name = {() =>'Paul-Elvis'}/>  {/*Render as a function */}
+        {/*<User name = {(isLoggedIn) => isLoggedIn ? 'Paul-Elvis': 'Guest'}/> {/*Render as a parameter */}
+        {/*<User render = {(isLoggedIn) => isLoggedIn ? 'Paul-Elvis': 'Guest'}/> {/*Changing name to render */}
+        <Counter
+          render={(count, incrementCount) => (
+            <ClickCounterThree count={count} incrementCount={incrementCount}/>
+          )}
+        />
+        <Counter
+          render={(count, incrementCount) => (
+            <HoverCounterThree count={count} incrementCount={incrementCount}/>
+          )}
+        />
       </div>
     );
   }
