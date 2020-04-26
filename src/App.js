@@ -42,6 +42,10 @@ import ClickCounterThree from './components/renderProps/part3/ClickCounterThree'
 import HoverCounterThree from './components/renderProps/part3/HoverCounterThree';
 import User from './components/renderProps/part2/User';
 import Counter from './components/renderProps/part3/Counter';
+import ComponentC from './components/Context/part1/ComponentC';
+import { UserProvider } from './components/Context/part1/userContext';
+import ComponentC1 from './components/Context/Part2/ComponentC1';
+import { UserProvider1 } from './components/Context/Part2/userContext1';
 
 class App extends Component {
   render() {
@@ -98,7 +102,7 @@ class App extends Component {
         {/*<User name = {() =>'Paul-Elvis'}/>  {/*Render as a function */}
         {/*<User name = {(isLoggedIn) => isLoggedIn ? 'Paul-Elvis': 'Guest'}/> {/*Render as a parameter */}
         {/*<User render = {(isLoggedIn) => isLoggedIn ? 'Paul-Elvis': 'Guest'}/> {/*Changing name to render */}
-        <Counter
+        {/*<Counter
           render={(count, incrementCount) => (
             <ClickCounterThree count={count} incrementCount={incrementCount}/>
           )}
@@ -107,7 +111,15 @@ class App extends Component {
           render={(count, incrementCount) => (
             <HoverCounterThree count={count} incrementCount={incrementCount}/>
           )}
-        />
+        /> */}
+        {/* <UserProvider value="Paul-Elvis">
+          <ComponentC/>
+        </UserProvider> */}
+        <UserProvider1 value="Paul-Elvis">
+          <ComponentC1/>
+        </UserProvider1>
+        
+
       </div>
     );
   }
