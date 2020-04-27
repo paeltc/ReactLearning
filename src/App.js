@@ -46,6 +46,8 @@ import ComponentC from './components/Context/part1/ComponentC';
 import { UserProvider } from './components/Context/part1/userContext';
 import ComponentC1 from './components/Context/Part2/ComponentC1';
 import { UserProvider1 } from './components/Context/Part2/userContext1';
+import PostList from './components/ReactAndHTTP/getRequest/PostList';
+import PostForm from './components/ReactAndHTTP/postRequest/PostForm';
 
 class App extends Component {
   render() {
@@ -115,9 +117,11 @@ class App extends Component {
         {/* <UserProvider value="Paul-Elvis">
           <ComponentC/>
         </UserProvider> */}
-        <UserProvider1 value="Paul-Elvis">
+        {/* <UserProvider1 value="Paul-Elvis">
           <ComponentC1/>
-        </UserProvider1>
+        </UserProvider1> */}
+        {/* <PostList/> */}
+        <PostForm/>
         
 
       </div>
